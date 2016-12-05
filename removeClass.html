@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+      $("p:first").addClass("intro class2");
+    $("p:last").addClass("intro2 class2");
+    $("h1").addClass("heading2 class2");
+    });
+
+    
+     $(".remove").click(function(){
+      $("p:first").removeClass("intro");
+    $("p:last").removeClass("intro2");
+    $("h1").removeClass("heading2");
+    });
+    
+     $(".remove2").click(function(){
+      $("p:first").removeClass("class2");
+    $("p:last").removeClass("class2");
+    $("h1").removeClass("class2");
+    });
+    
+     $(".remove3").click(function(){
+      $("p:first").removeClass("class2 intro");
+    $("p:last").removeClass("class2 intro2");
+    $("h1").removeClass("class2 heading2 ");
+    });
+
+
+   
+});
+</script>
+<style>
+.intro {
+    font-size: 150%;
+    color: red;
+}
+    
+.intro2 {
+    font-size: 150%;
+    color: green;
+}
+.heading{
+    color: black;
+    
+    }
+.heading2{
+    color:aqua;
+    
+    }
+    
+    .class2{
+    background-color: burlywood;
+    }
+</style>
+</head>
+<body>
+
+<h1 class="heading">This is a heading</h1>
+
+<p>This is a paragraph.</p>
+       <P class="text"></P>
+<p>This is another paragraph.</p>
+ 
+
+<button>Add class to all elements</button>
+<button class="remove">Remove text color </button>
+<button class="remove2">Remove background color</button>
+<button class="remove3">Remove all classes</button>
+
+</body>
+</html>
