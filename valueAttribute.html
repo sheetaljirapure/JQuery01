@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    
+    $("button").click(function(){
+        var msg = $(this).text();
+        $("input").val(msg);
+    
+    })
+    
+    
+});
+</script>
+<style>
+    
+
+    #box{
+   
+    background-color: aqua;
+        border: 3px solid blue;
+        margin: 40px;
+    }
+    
+    button{
+    margin: 10px;}
+    </style>
+</head>
+<body>
+ <button>This is good</button>
+ <button>Happy Holidays </button>
+ <button> World journey</button>
+ <button>Movie Time</button><br>
+ <input type="text" value="click button for text">
+
+</body>
+</html>

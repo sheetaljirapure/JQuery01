@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+      alert( "box width is "+ $("#box").attr("width"));
+        });
+   
+});
+</script>
+<style>
+    
+
+    #box{
+   
+    background-color: aqua;
+        border: 3px solid blue;
+        margin: 40px;
+    }
+    
+    button{
+    margin: 40px;}
+    </style>
+</head>
+<body>
+<canvas id="box" width="200" height="200" style="border:1px solid">
+Your browser does not support the HTML5 canvas tag.
+</canvas>
+
+ <br>
+
+<button>Get the width attribute</button>
+
+</body>
+</html>

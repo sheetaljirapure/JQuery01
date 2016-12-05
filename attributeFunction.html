@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+      $("#box").attr("width", function(v,n){
+            return n-5;
+        
+      });
+        
+         $("#box").attr("height", function(v,n){
+            return n-5;
+        
+      });
+        });
+   
+});
+</script>
+<style>
+    
+
+    #box{
+   
+    background-color: aqua;
+        border: 3px solid blue;
+        margin: 40px;
+    }
+    
+    button{
+    margin: 40px;}
+    </style>
+</head>
+<body>
+<canvas id="box" width="200" height="200" style="border:1px solid">
+Your browser does not support the HTML5 canvas tag.
+</canvas>
+
+ <br>
+
+<button>reduse width and height by 5 px</button>
+
+</body>
+</html>
