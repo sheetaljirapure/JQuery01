@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+
+    $("#butt01").click(function(){
+      $("div").data("greet","Hello World");
+    });
+
+    $("#butt02").click(function(){
+      alert($("div").data("greet"));
+    });
+});
+</script>
+<style>
+    button{
+    margin: 20px;
+        
+    }
+    
+    div{
+    margin-left: 150px;
+        margin-top: 50px;
+    }
+    </style>
+</head>
+<body>
+ <div>
+ <button id ="butt01">Click to add value</button>
+ <button id ="butt02">Click to display msg</button>
+     <div id="data"></div>
+
+ </div>
+</body>
+</html>

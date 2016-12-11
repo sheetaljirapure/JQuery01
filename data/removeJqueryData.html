@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+
+    $("#butt01").click(function(){
+      $("div").data("greet","Hello World");
+         alert($("div").data("greet"));
+    });
+
+    $("#butt02").click(function(){
+       $("div").removeData("greet");
+         alert($("div").data("greet"));
+    });
+        
+    $("span:eq(0)").text(""+$("div").data("greet"));
+    $("#data").data("greet","Data Value 1");
+   
+    $("span:eq(1)").text(""+$("#data").data("greet"));
+    $("#data").removeData("greet");
+    $("span:eq(2)").text(""+$("#data").data("greet"));
+        
+});
+</script>
+<style>
+    button{
+    margin: 20px;
+        
+    }
+    
+    div{
+    margin-left: 150px;
+        margin-top: 50px;
+    }
+    </style>
+</head>
+<body>
+ <div>
+ <button id ="butt01">Click to add value</button>
+ <button id ="butt02">Click to display valua after removal</button>
+     <div id="data"></div>
+     <div id="data01"></div>
+     <h3><b>Another Exaample of removeData()</b></h3></p>
+     <div><p>This is before creating data:</p><span></span></div>
+      <div><p>This is after creating data:</p><span></span></div>
+      <div><p>This is after revmoval of data1 :</p><span></span></div>
+      <div><span></span></div>
+
+ </div>
+</body>
+</html>
